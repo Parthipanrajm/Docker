@@ -1,0 +1,13 @@
+DOCKER:
+Run a code - need docker file
+Compose file - telling docker how to run app
+-
+#docker run wlecom-to-docker
+#docker ps -a
+#docker build -t welcome . => build image using docker file from the location .
+docker scout repo enable --org ORG_NAME ORG_NAME/scout-demo
+docker scout cves --only-package express
+#docker build push -t parthipanraj/linux:v2
+Docker Scout:
+*************
+* Security for docker vulnerabilities (software Bill of Materials)
