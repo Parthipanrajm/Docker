@@ -1,0 +1,11 @@
+#docker run img
+#docker ps
+#docker ps -a
+#docker stop <id>
+#docker rm <id>
+#docker rmi imgename
+#docker exec contianer <command>
+#docker pull img
+#docker run -d image - container in bg
+#docker attach ao43
+#
