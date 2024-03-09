@@ -8,4 +8,17 @@
 #docker pull img
 #docker run -d image - container in bg
 #docker attach ao43
-#
+#docker run -it centos bash
+#docker --version
+#docker ps -aq - get id of container
+$ docker run -d --name webapp nginx:alphine
+#docker run nginx:4.0  --> 4.0 is tag. default tag is latest
+Docker PORT Mapping:
+********************
+#docker run -p 80:5000 nginx
+
+Volume Mapping:
+**************
+#docker run -v /mnt/data:/var/lib/mysql nginx
+#docker inspect nginx_base
+#docker logs nginx_base
