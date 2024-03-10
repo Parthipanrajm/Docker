@@ -1,8 +1,10 @@
 --link redi:redis - to link one container to another - Depreceted in future
 
 File used to create container:
+version: 2
+services:
 name:
-  image: redis
+  image: redis or build: ./vote
   ports:
    - 5000:80
   links:
@@ -12,3 +14,28 @@ worker:
   links:
   - db
   - redis
+services:
+name:
+  image: redis or build: ./vote
+  ports:
+   - 5000:80
+worker:
+  image: worker
+  depends_ob:
+  - redis
+
+version: 3
+name:
+  image: redis or build: ./vote
+  ports:
+   - 5000:80
+worker:
+  image: worker
+  depends_ob:
+  - redis
+  networks:
+  - frontend
+networks:
+  front-end:
+  back-end:
+
