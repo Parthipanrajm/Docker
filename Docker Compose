@@ -1,0 +1,14 @@
+--link redi:redis - to link one container to another - Depreceted in future
+
+File used to create container:
+name:
+  image: redis
+  ports:
+   - 5000:80
+  links:
+  - redis
+worker:
+  image: worker
+  links:
+  - db
+  - redis
