@@ -13,7 +13,7 @@
 #docker ps -aq - get id of container
 $ docker run -d --name webapp nginx:alphine - detach mode to run background
 #docker run nginx:4.0  --> 4.0 is tag. default tag is latest
-Docker PORT Mapping:
+Docker PORT Mapping: 
 ********************
 #docker run -p 80:5000 nginx
 
