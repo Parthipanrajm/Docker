@@ -1,0 +1,10 @@
+FROM centos
+RUN yum update
+RUN yum install python
+RUN pip install flask
+RUN yum install flask-mysql
+COPY . /opt/source
+ENTRYPOINT FLASK_APP=/opt/source/app.py flask run
+
+It shoudl start with FROM
+#docker build Dockerfile -t pathipan/custom-app
