@@ -14,3 +14,7 @@ COMMAND vs ENTRYPOINT:
 **********************
 CMD sleep 5
 CMD ["sleep","5"]
+ENTRYPOINT["sleep"]
+CMD ["5"]
+--entrypoint to override
+
