@@ -11,3 +11,6 @@ docker scout cves --only-package express
 Docker Scout:
 *************
 * Security for docker vulnerabilities (software Bill of Materials)
+
+/var/lib/docker/volumes
+
