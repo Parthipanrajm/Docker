@@ -19,6 +19,14 @@ Docker PORT Mapping:
 
 Volume Mapping:
 **************
-#docker run -v /mnt/data:/var/lib/mysql nginx
+#docker run -v /mnt/data:/var/lib/mysql nginx - mount
+#docker run -v data_volume2:/var/lib/mysql nfginx
+#docker run --mount type=bind,source=/data/mysql,target=/var/lib/mysql mysql
 #docker inspect nginx_base
 #docker logs nginx_base
+
+ docker network create --driver bridge --subnet 182.18.0.1/24 --gateway 182.18.0.1 wp-mysql-network 
+ docker network inspect wp-mysql-network
+docker image prune -a
+#docker -H=192.168.10.1:2375 run nginx => if docker engine im diff server
+
